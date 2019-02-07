@@ -30,10 +30,14 @@ def get_random_episode(shows):
     season = tmdb.TV_Seasons(random_show.id, random_season_num)
     return random_show, random.choice(season.info()['episodes'])
 
-result = get_random_episode(show_list)
-show = result[0]
-episode = result[1]
-print('Show:', show.info()['name'],
-      '\nSeason:', episode['season_number'],
-      '\nEpisode #:', episode['episode_number'],
-      '\nEpisode name:', episode['name'])
+go_again = True
+while (go_again):
+    result = get_random_episode(show_list)
+    show = result[0]
+    episode = result[1]
+    print('Show:', show.info()['name'],
+          '\nSeason:', episode['season_number'],
+          '\nEpisode #:', episode['episode_number'],
+          '\nEpisode name:', episode['name'])
+
+    go_again = input('Try again with the same shows? y/n: ') == 'y'
