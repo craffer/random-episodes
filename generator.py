@@ -38,6 +38,7 @@ while (go_again):
     print('Show:', show.info()['name'],
           '\nSeason:', episode['season_number'],
           '\nEpisode #:', episode['episode_number'],
-          '\nEpisode name:', episode['name'])
+          '\nEpisode name:', episode['name'],
+          '\nDescription:', episode['overview'])
 
     go_again = input('Try again with the same shows? y/n: ') == 'y'
