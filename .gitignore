@@ -10,3 +10,6 @@ env/
 venv/
 venv3/
 .venv/
+
+# API config
+config.py
