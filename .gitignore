@@ -1,2 +1,12 @@
-env/
+# Coding environment setup
 .vscode
+
+# Python auto-generated files
+*.pyc
+__pycache__/
+*.egg-info*
+dist/
+env/
+venv/
+venv3/
+.venv/
