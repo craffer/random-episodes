@@ -19,6 +19,7 @@ def main():
     """Random episode generator."""
     # gets the list of desired shows from the user
     show_names = []
+    print('When finished, hit ENTER.')
     while True:
         show_name = input('Enter a TV show: ')
         if show_name == '':
