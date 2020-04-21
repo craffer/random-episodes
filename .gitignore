@@ -11,5 +11,5 @@ venv/
 venv3/
 .venv/
 
-# API config
-config.py
+# dirnev
+.envrc
