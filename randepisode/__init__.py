@@ -13,5 +13,5 @@ app.config.from_object("randepisode.config")
 app.config.from_envvar("INSTA485_SETTINGS", silent=True)
 
 # tell our app about our API and views files
-import insta485.api  # noqa: E402  pylint: disable=wrong-import-position
-import insta485.views  # noqa: E402  pylint: disable=wrong-import-position
+import randepisode.api  # noqa: E402  pylint: disable=wrong-import-position
+import randepisode.views  # noqa: E402  pylint: disable=wrong-import-position
