@@ -3,7 +3,7 @@ import flask
 import randepisode
 
 
-@randepisode.app.route("/", methods=["GET"])
+@randepisode.app.route("/")
 def show_index():
     """Display / route."""
     return flask.render_template("index.html")
