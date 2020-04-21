@@ -1,9 +1,9 @@
 """Returns a random episode from a list of TV shows."""
 import random
+import os
 import tmdbsimple as tmdb
-import randepisode.config as config
 
-tmdb.API_KEY = config.API_KEY
+tmdb.API_KEY = os.environ["TMDB_KEY"]
 
 
 def get_random_episode(shows):
