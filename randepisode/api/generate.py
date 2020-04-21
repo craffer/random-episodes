@@ -1,1 +1,1 @@
-"""API endpoints for searching for TV shows."""
+"""API endpoints for generating a random episode of selected TV shows."""

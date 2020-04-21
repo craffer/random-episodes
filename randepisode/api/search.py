@@ -1,4 +1,4 @@
-"""API endpoints for generating a random episode of selected TV shows."""
+"""API endpoints for searching for TV shows."""
 import flask
 import randepisode
 import tmdbsimple as tmdb
