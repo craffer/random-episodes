@@ -11,5 +11,9 @@ venv/
 venv3/
 .venv/
 
+# JS
+node_modules/
+bundle.js
+
 # dirnev
 .envrc
