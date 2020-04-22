@@ -8,7 +8,10 @@ i {
     line-height: 1.6;
 }
 
-/* don't display arrow for our autocomplete dropdown */
-input::-webkit-calendar-picker-indicator {
-    display: none;
+.ac-results {
+    z-index: 100;
+}
+
+.ac-result {
+    max-height: 50px;
 }

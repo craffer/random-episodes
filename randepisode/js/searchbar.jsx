@@ -19,6 +19,11 @@ export default class SearchBar extends React.Component {
     this.setState({
       query: event.target.value,
     });
+    if (event.target.value === "") {
+      this.setState({
+        results: [],
+      });
+    }
   }
 
   keyPress(event) {
@@ -37,7 +42,7 @@ export default class SearchBar extends React.Component {
         })
         .then((data) => {
           this.setState({
-            results: data.results,
+            results: data.results.slice(0, 5),
           });
         })
         .catch((error) => console.log(error));

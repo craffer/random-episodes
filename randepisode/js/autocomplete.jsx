@@ -8,15 +8,24 @@ export default class Autocomplete extends React.Component {
   render() {
     let options = [];
     if (this.props.results) {
-      console.log(this.props.results);
       this.props.results.forEach((result) => {
         options.push(
-          <option value={`${result.name} (${result.origin_country[0]})`}>
-            {result.overview}
-          </option>
+          <button
+            type="button"
+            className="list-group-item list-group-item-action ac-result"
+          >
+            <div>{`${result.name} (${result.origin_country[0]})`}</div>
+          </button>
         );
       });
-      return <datalist id="autocomplete">{options}</datalist>;
+      return (
+        <ul
+          className="list-group text-dark position-absolute w-100 d-block ac-results"
+          id="autocomplete"
+        >
+          {options}
+        </ul>
+      );
     }
   }
 }
