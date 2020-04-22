@@ -7,7 +7,7 @@ export default class SearchBar extends React.Component {
 
     this.state = {
       query: "",
-      results: {},
+      results: [],
     };
 
     this.onChange = this.onChange.bind(this);
@@ -51,6 +51,7 @@ export default class SearchBar extends React.Component {
           className="mt-5 rounded searchbar w-100"
           type="text"
           placeholder="Enter a TV show"
+          list="autocomplete"
           value={this.state.query}
           onChange={this.onChange}
           onKeyPress={this.keyPress}

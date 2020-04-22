@@ -6,6 +6,17 @@ export default class Autocomplete extends React.Component {
   }
 
   render() {
-    return <div className="autocomplete"></div>;
+    let options = [];
+    if (this.props.results) {
+      console.log(this.props.results);
+      this.props.results.forEach((result) => {
+        options.push(
+          <option value={`${result.name} (${result.origin_country[0]})`}>
+            {result.overview}
+          </option>
+        );
+      });
+      return <datalist id="autocomplete">{options}</datalist>;
+    }
   }
 }
