@@ -13,7 +13,8 @@
     <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
 
     <!-- font awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <title>Random Episodes</title>
 </head>
@@ -37,30 +38,18 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mt-1">
-                    <a class="nav-link" href="https://github.com/craffer/random-episodes"><i class="fab fa-github"></i></a>
+                    <a class="nav-link" href="https://github.com/craffer/random-episodes"><i
+                            class="fab fa-github"></i></a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="offset-md-4 col-md-4 d-flex flex-column align-items-center">
-                <input class="mt-5 rounded searchbar w-100" type="text" placeholder="Enter a TV show" />
-                <button type="submit" class="btn btn-primary mt-2">Randomize</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="offset-md-2 col-md-8">
-                <h4>Selected Shows:</h4>
-            </div>
-        </div>
+    <div id="reactEntry">
+        Loading...
     </div>
-        
-        <!-- <div id="reactEntry">
-            Loading ...
-        </div> -->
-        <!-- Load JavaScript -->
-        <!-- <script type="text/javascript" src="{{ url_for('static', filename='js/bundle.js') }}"></script> -->
+
+    <!-- Load JavaScript -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bundle.js') }}"></script>
     </div>
 </body>
 

@@ -8,8 +8,12 @@ export default class SearchBar extends React.Component {
 
   render() {
     return (
-      <div className="searchArea">
-        <input className="searchBar" type="text"></input>
+      <div className="searchArea w-100">
+        <input
+          className="mt-5 rounded searchbar w-100"
+          type="text"
+          placeholder="Enter a TV show"
+        />
         <Autocomplete />
       </div>
     );

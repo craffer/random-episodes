@@ -38,11 +38,19 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className="app">
-        <SearchBar addShow={this.addShow} />
-        <RandomizeButton />
-        <SelectedShows shows={this.state.shows} />
-        <Result />
+      <div className="container-fluid">
+        <div className="row">
+          <div className="offset-md-4 col-md-4 d-flex flex-column align-items-center">
+            <SearchBar addShow={this.addShow} />
+            <RandomizeButton />
+          </div>
+        </div>
+        <div className="row">
+          <div className="offset-md-2 col-md-8">
+            <SelectedShows shows={this.state.shows} />
+            <Result />
+          </div>
+        </div>
       </div>
     );
   }

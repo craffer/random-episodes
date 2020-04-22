@@ -6,6 +6,10 @@ export default class Button extends React.Component {
   }
 
   render() {
-    return <div className="randomize-button"></div>;
+    return (
+      <button type="submit" className="btn btn-primary mt-2">
+        Randomize
+      </button>
+    );
   }
 }
