@@ -15,3 +15,8 @@ i {
 .ac-result {
     max-height: 50px;
 }
+
+.deselect {
+    top: 0px;
+    right: 5px;
+}

@@ -15,7 +15,7 @@ export default class Deselect extends React.Component {
     return (
       <button
         type="button"
-        className="close"
+        className="close position-absolute deselect"
         aria-label="Close"
         onClick={this.buttonClick}
       >
