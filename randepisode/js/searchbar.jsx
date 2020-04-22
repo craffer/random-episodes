@@ -11,6 +11,7 @@ export default class SearchBar extends React.Component {
     };
 
     this.onChange = this.onChange.bind(this);
+    this.clearState = this.clearState.bind(this);
     this.keyPress = this.keyPress.bind(this);
     this.search = this.search.bind(this);
   }
@@ -24,6 +25,14 @@ export default class SearchBar extends React.Component {
         results: [],
       });
     }
+  }
+
+  clearState() {
+    this.setState({
+      query: "",
+      results: [],
+    });
+    this.input.focus();
   }
 
   keyPress(event) {
@@ -56,7 +65,7 @@ export default class SearchBar extends React.Component {
           className="rounded searchbar w-100"
           type="text"
           placeholder="Enter a TV show"
-          list="autocomplete"
+          ref={(input) => (this.input = input)}
           value={this.state.query}
           onChange={this.onChange}
           onKeyPress={this.keyPress}
@@ -64,6 +73,7 @@ export default class SearchBar extends React.Component {
         <Autocomplete
           results={this.state.results}
           addShow={this.props.addShow}
+          clearSearch={this.clearState}
         />
       </div>
     );

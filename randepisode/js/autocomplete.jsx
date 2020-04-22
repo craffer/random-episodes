@@ -8,6 +8,7 @@ export default class Autocomplete extends React.Component {
   }
 
   onResultClick(newShow) {
+    this.props.clearSearch();
     this.props.addShow(newShow);
   }
 
