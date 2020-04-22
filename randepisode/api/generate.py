@@ -12,8 +12,7 @@ def generate_random_episode():
 
     if flask.request.method == "POST":
         # retrieve the list of show IDs from the data sent in the POST request
-        content = flask.request.get_json()
-        show_ids = content["ids"]
+        show_ids = flask.request.get_json()
         # select a show at random
         random_id = random.choice(show_ids)
 
@@ -26,5 +25,6 @@ def generate_random_episode():
         random_episode_obj = random.choice(season_obj.info()["episodes"])
 
         context["episode"] = random_episode_obj
+        context["show"] = show_obj.info()
 
     return flask.jsonify(**context)

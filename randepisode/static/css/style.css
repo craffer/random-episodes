@@ -7,3 +7,11 @@ i {
     font-size: 1.2rem;
     line-height: 1.6;
 }
+
+.ac-results {
+    z-index: 100;
+}
+
+.ac-result {
+    max-height: 50px;
+}
