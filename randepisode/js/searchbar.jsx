@@ -7,6 +7,7 @@ export default class SearchBar extends React.Component {
 
     this.state = {
       query: "",
+      results: {},
     };
 
     this.onChange = this.onChange.bind(this);
@@ -35,7 +36,9 @@ export default class SearchBar extends React.Component {
           return response.json();
         })
         .then((data) => {
-          console.log(data);
+          this.setState({
+            results: data.results,
+          });
         })
         .catch((error) => console.log(error));
     }
@@ -52,7 +55,7 @@ export default class SearchBar extends React.Component {
           onChange={this.onChange}
           onKeyPress={this.keyPress}
         />
-        <Autocomplete />
+        <Autocomplete results={this.state.results} />
       </div>
     );
   }
