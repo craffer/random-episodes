@@ -13,15 +13,14 @@
     <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
 
     <!-- font awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <title>Random Episodes</title>
+    <title>About &bull; Random Episodes</title>
 </head>
 
 <body class="bg-secondary text-white">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">Random Episode Generator</a>
+        <a class="navbar-brand" href="#">Random Episode Generator</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,27 +28,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about">About <span class="sr-only">(current)</span> </a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item mt-1">
-                    <a class="nav-link" href="https://github.com/craffer/random-episodes"><i
-                            class="fab fa-github"></i></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/craffer/random-episodes"><i class="fab fa-github"></i></a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div id="reactEntry">
-        Loading...
-    </div>
-
-    <!-- Load JavaScript -->
-    <script type="text/javascript" src="{{ url_for('static', filename='js/bundle.js') }}"></script>
+    <div class="d-flex m-3">
+        <h1>About</h1>
     </div>
 </body>
 
