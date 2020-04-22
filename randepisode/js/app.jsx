@@ -34,7 +34,7 @@ export default class App extends React.Component {
         <div className="row">
           <div className="offset-md-4 col-md-4 d-flex flex-column align-items-center">
             <SearchBar addShow={this.addShow} />
-            <RandomizeButton />
+            <RandomizeButton shows={this.state.shows} />
           </div>
         </div>
         <div className="row">
