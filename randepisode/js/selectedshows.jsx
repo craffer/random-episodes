@@ -9,13 +9,19 @@ export default class SelectedShows extends React.Component {
     let selectedShows = [];
     this.props.shows.forEach((show) => {
       selectedShows.push(
-        <div className="show">
-          <img src={`https://image.tmdb.org/t/p/w154/${show.poster_path}`} />
-          <div>{show.name}</div>
-          <div>{show.overview}</div>
+        <div className="show d-flex flex-column align-items-center">
+          <img src={`https://image.tmdb.org/t/p/w185/${show.poster_path}`} />
+          <h5 className="mt-1">{show.name}</h5>
         </div>
       );
     });
-    return <div className="selected-shows">{selectedShows}</div>;
+    return (
+      <div>
+        <h5>Selected Shows:</h5>
+        <div className="selected-shows d-flex flex-row mt-2">
+          {selectedShows}
+        </div>
+      </div>
+    );
   }
 }
