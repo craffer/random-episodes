@@ -1,6 +1,6 @@
 import React from "react";
 import SearchBar from "./searchbar";
-import RandomizeButton from "./button";
+import RandomizeButton from "./randomize";
 import SelectedShows from "./selectedshows";
 import Result from "./result";
 
