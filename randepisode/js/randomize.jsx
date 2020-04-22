@@ -14,7 +14,6 @@ export default class Button extends React.Component {
       this.props.shows.forEach((show) => {
         shows.push(show.id);
       });
-      console.log(JSON.stringify(shows));
       fetch(url, {
         method: "POST",
         headers: {
@@ -27,7 +26,7 @@ export default class Button extends React.Component {
           return response.json();
         })
         .then((data) => {
-          this.props.updateEpisode(data.episode);
+          this.props.updateEpisode(data.episode, data.show);
         })
         .catch((error) => console.log(error));
     }

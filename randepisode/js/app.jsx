@@ -10,7 +10,8 @@ export default class App extends React.Component {
     this.state = {
       shows: [],
       generated: false,
-      episode: {},
+      randomEpisode: {},
+      randomShow: {},
     };
 
     this.addShow = this.addShow.bind(this);
@@ -30,12 +31,12 @@ export default class App extends React.Component {
     }));
   }
 
-  updateEpisode(newEpisode) {
+  updateEpisode(newEpisode, newShow) {
     this.setState({
       generated: true,
-      episode: newEpisode,
+      randomEpisode: newEpisode,
+      randomShow: newShow,
     });
-    console.log(this.state.episode);
   }
 
   render() {
@@ -56,7 +57,11 @@ export default class App extends React.Component {
               shows={this.state.shows}
               removeShow={this.removeShow}
             />
-            <Result show={this.state.generated} episode={this.state.episode} />
+            <Result
+              visible={this.state.generated}
+              episode={this.state.randomEpisode}
+              show={this.state.randomShow}
+            />
           </div>
         </div>
       </div>
