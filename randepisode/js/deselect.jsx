@@ -8,10 +8,6 @@ export default class Deselect extends React.Component {
   }
 
   buttonClick(event) {
-    // oldShow = null; // TODO
-    // this.props.removeShow(oldShow);
-    console.log("X clicked!");
-    console.log(event);
     event.preventDefault();
   }
 
