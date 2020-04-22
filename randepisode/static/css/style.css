@@ -7,3 +7,8 @@ i {
     font-size: 1.2rem;
     line-height: 1.6;
 }
+
+/* don't display arrow for our autocomplete dropdown */
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
