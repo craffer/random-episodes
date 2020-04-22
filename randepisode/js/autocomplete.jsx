@@ -3,6 +3,12 @@ import React from "react";
 export default class Autocomplete extends React.Component {
   constructor(props) {
     super(props);
+
+    this.onResultClick = this.onResultClick.bind(this);
+  }
+
+  onResultClick(newShow) {
+    this.props.addShow(newShow);
   }
 
   render() {
@@ -10,12 +16,7 @@ export default class Autocomplete extends React.Component {
     if (this.props.results) {
       this.props.results.forEach((result) => {
         options.push(
-          <button
-            type="button"
-            className="list-group-item list-group-item-action ac-result"
-          >
-            <div>{`${result.name} (${result.origin_country[0]})`}</div>
-          </button>
+          <ACResult value={result} onResultClick={this.onResultClick} />
         );
       });
       return (
@@ -27,5 +28,29 @@ export default class Autocomplete extends React.Component {
         </ul>
       );
     }
+  }
+}
+
+class ACResult extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.props.onResultClick(this.props.value);
+  }
+
+  render() {
+    return (
+      <button
+        type="button"
+        className="list-group-item list-group-item-action ac-result"
+        onClick={this.handleClick}
+      >
+        <div>{`${this.props.value.name} (${this.props.value.origin_country[0]})`}</div>
+      </button>
+    );
   }
 }

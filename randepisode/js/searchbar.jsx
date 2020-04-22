@@ -61,7 +61,10 @@ export default class SearchBar extends React.Component {
           onChange={this.onChange}
           onKeyPress={this.keyPress}
         />
-        <Autocomplete results={this.state.results} />
+        <Autocomplete
+          results={this.state.results}
+          addShow={this.props.addShow}
+        />
       </div>
     );
   }
