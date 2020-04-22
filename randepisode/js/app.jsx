@@ -43,7 +43,7 @@ export default class App extends React.Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="offset-md-4 col-md-4 d-flex flex-column align-items-center">
+          <div className="offset-md-2 col-md-8 border rounded bg-light text-dark d-flex flex-column align-items-center p-3 my-4">
             <SearchBar addShow={this.addShow} />
             <RandomizeButton
               shows={this.state.shows}
