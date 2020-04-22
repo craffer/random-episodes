@@ -11,7 +11,7 @@ export default class SelectedShows extends React.Component {
       let selectedShows = [];
       this.props.shows.forEach((show) => {
         selectedShows.push(
-          <div className="show d-flex flex-column align-items-center">
+          <div className="show d-flex flex-column align-items-center mx-3">
             <div className="poster">
               <img
                 src={`https://image.tmdb.org/t/p/w185/${show.poster_path}`}
