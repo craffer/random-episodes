@@ -1,4 +1,5 @@
 import React from "react";
+import Autocomplete from "./autocomplete";
 
 export default class SearchBar extends React.Component {
   constructor(props) {
@@ -6,6 +7,11 @@ export default class SearchBar extends React.Component {
   }
 
   render() {
-    return <input className="searchBar" type="text"></input>;
+    return (
+      <div className="searchArea">
+        <input className="searchBar" type="text"></input>
+        <Autocomplete />
+      </div>
+    );
   }
 }
