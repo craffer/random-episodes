@@ -15,7 +15,7 @@
     <!-- font awesome icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <title>Random Episode Generator</title>
+    <title>About</title>
 </head>
 
 <body>
@@ -28,11 +28,11 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about">About <span class="sr-only">(current)</span> </a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -42,12 +42,8 @@
             </ul>
         </div>
     </nav>
-    <div class="main">
-        <div id="reactEntry">
-            Loading ...
-        </div>
-        <!-- Load JavaScript -->
-        <script type="text/javascript" src="{{ url_for('static', filename='js/bundle.js') }}"></script>
+    <div class="d-flex m-3">
+        <h1>About</h1>
     </div>
 </body>
 
