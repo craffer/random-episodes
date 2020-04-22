@@ -25,5 +25,6 @@ def generate_random_episode():
         random_episode_obj = random.choice(season_obj.info()["episodes"])
 
         context["episode"] = random_episode_obj
+        context["show"] = show_obj.info()
 
     return flask.jsonify(**context)
