@@ -10,10 +10,12 @@ export default class App extends React.Component {
     this.state = {
       shows: [],
       generated: false,
+      episode: {},
     };
 
     this.addShow = this.addShow.bind(this);
     this.removeShow = this.removeShow.bind(this);
+    this.updateEpisode = this.updateEpisode.bind(this);
   }
 
   addShow(newShow) {
@@ -28,13 +30,24 @@ export default class App extends React.Component {
     }));
   }
 
+  updateEpisode(newEpisode) {
+    this.setState({
+      generated: true,
+      episode: newEpisode,
+    });
+    console.log(this.state.episode);
+  }
+
   render() {
     return (
       <div className="container-fluid">
         <div className="row">
           <div className="offset-md-4 col-md-4 d-flex flex-column align-items-center">
             <SearchBar addShow={this.addShow} />
-            <RandomizeButton shows={this.state.shows} />
+            <RandomizeButton
+              shows={this.state.shows}
+              updateEpisode={this.updateEpisode}
+            />
           </div>
         </div>
         <div className="row">
@@ -43,7 +56,7 @@ export default class App extends React.Component {
               shows={this.state.shows}
               removeShow={this.removeShow}
             />
-            <Result />
+            <Result show={this.state.generated} episode={this.state.episode} />
           </div>
         </div>
       </div>
