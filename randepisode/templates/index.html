@@ -20,7 +20,7 @@
 
 <body class="bg-secondary text-white">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Random Episode Generator</a>
+        <a class="navbar-brand" href="/">Random Episode Generator</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -36,18 +36,31 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item mt-1">
                     <a class="nav-link" href="https://github.com/craffer/random-episodes"><i class="fab fa-github"></i></a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="main">
-        <div id="reactEntry">
-            Loading ...
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-md-4 col-md-4 d-flex flex-column align-items-center">
+                <input class="mt-5 rounded searchbar w-100" type="text" placeholder="Enter a TV show" />
+                <button type="submit" class="btn btn-primary mt-2">Randomize</button>
+            </div>
         </div>
+        <div class="row">
+            <div class="offset-md-2 col-md-8">
+                <h4>Selected Shows:</h4>
+            </div>
+        </div>
+    </div>
+        
+        <!-- <div id="reactEntry">
+            Loading ...
+        </div> -->
         <!-- Load JavaScript -->
-        <script type="text/javascript" src="{{ url_for('static', filename='js/bundle.js') }}"></script>
+        <!-- <script type="text/javascript" src="{{ url_for('static', filename='js/bundle.js') }}"></script> -->
     </div>
 </body>
 
