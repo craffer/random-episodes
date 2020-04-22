@@ -25,7 +25,7 @@ export default class SelectedShows extends React.Component {
       return (
         <div>
           <h5>Selected Shows:</h5>
-          <div className="selected-shows d-flex flex-row mt-2">
+          <div className="selected-shows d-flex flex-row mt-2 flex-wrap w-100 align-items-around">
             {selectedShows}
           </div>
         </div>
