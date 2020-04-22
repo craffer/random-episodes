@@ -22,7 +22,7 @@ export default class Autocomplete extends React.Component {
       });
       return (
         <ul
-          className="list-group text-dark position-absolute w-100 d-block ac-results"
+          className="list-group text-dark position-absolute w-100 d-block ac-results overflow-auto"
           id="autocomplete"
         >
           {options}

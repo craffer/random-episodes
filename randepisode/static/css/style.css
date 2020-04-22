@@ -10,6 +10,7 @@ i {
 
 .ac-results {
     z-index: 100;
+    max-height: 250px;
 }
 
 .ac-result {

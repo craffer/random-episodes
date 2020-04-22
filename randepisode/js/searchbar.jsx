@@ -51,7 +51,7 @@ export default class SearchBar extends React.Component {
         })
         .then((data) => {
           this.setState({
-            results: data.results.slice(0, 5),
+            results: data.results.slice(0, 10),
           });
         })
         .catch((error) => console.log(error));
