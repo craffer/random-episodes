@@ -27,7 +27,7 @@ export default class Button extends React.Component {
           return response.json();
         })
         .then((data) => {
-          this.props.updateEpisode(data);
+          this.props.updateEpisode(data.episode);
         })
         .catch((error) => console.log(error));
     }
