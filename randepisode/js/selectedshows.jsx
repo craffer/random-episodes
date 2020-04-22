@@ -1,4 +1,5 @@
 import React from "react";
+import Deselect from "./deselect";
 
 export default class SelectedShows extends React.Component {
   constructor(props) {
@@ -10,7 +11,10 @@ export default class SelectedShows extends React.Component {
     this.props.shows.forEach((show) => {
       selectedShows.push(
         <div className="show d-flex flex-column align-items-center">
-          <img src={`https://image.tmdb.org/t/p/w185/${show.poster_path}`} />
+          <div className="poster">
+            <img src={`https://image.tmdb.org/t/p/w185/${show.poster_path}`} />
+            <Deselect removeShow={this.props.removeShow} />
+          </div>
           <h5 className="mt-1">{show.name}</h5>
         </div>
       );

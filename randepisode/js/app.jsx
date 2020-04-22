@@ -28,12 +28,21 @@ export default class App extends React.Component {
       ],
       generated: false,
     };
+
+    this.addShow = this.addShow.bind(this);
+    this.removeShow = this.removeShow.bind(this);
   }
 
   addShow(newShow) {
     this.setState = {
       shows: [...this.state.shows, newShow],
     };
+  }
+
+  removeShow(oldShow) {
+    this.setState((prevState) => ({
+      shows: prevState.shows.filter((show) => show !== oldShow),
+    }));
   }
 
   render() {
@@ -47,7 +56,10 @@ export default class App extends React.Component {
         </div>
         <div className="row">
           <div className="offset-md-2 col-md-8">
-            <SelectedShows shows={this.state.shows} />
+            <SelectedShows
+              shows={this.state.shows}
+              removeShow={this.removeShow}
+            />
             <Result />
           </div>
         </div>
