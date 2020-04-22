@@ -24,6 +24,8 @@ export default class Autocomplete extends React.Component {
         <ul
           className="list-group text-dark position-absolute w-100 d-block ac-results overflow-auto"
           id="autocomplete"
+          role="menu"
+          ref={(ul) => (this.ul = ul)}
         >
           {options}
         </ul>
