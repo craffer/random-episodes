@@ -8,6 +8,7 @@ export default class Autocomplete extends React.Component {
   }
 
   onResultClick(newShow) {
+    this.props.clearSearch();
     this.props.addShow(newShow);
   }
 
@@ -21,8 +22,10 @@ export default class Autocomplete extends React.Component {
       });
       return (
         <ul
-          className="list-group text-dark position-absolute w-100 d-block ac-results"
+          className="list-group text-dark w-100 ac-results position-relative overflow-auto"
           id="autocomplete"
+          role="menu"
+          ref={(ul) => (this.ul = ul)}
         >
           {options}
         </ul>

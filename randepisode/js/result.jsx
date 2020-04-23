@@ -7,14 +7,17 @@ export default class Result extends React.Component {
 
   render() {
     if (this.props.visible) {
+      console.log(this.props.episode);
+      console.log(this.props.show);
       return (
-        <div className="result">
+        <div className="result rounded lighter-bg p-2 my-4">
           <h3>Random Episode:</h3>
           <h4>
             {this.props.show.name}: Season {this.props.episode.season_number},
             Episode {this.props.episode.episode_number}
           </h4>
-          <h3>{this.props.episode.name}</h3>
+          <h5>{this.props.episode.name}</h5>
+          <p>{this.props.episode.overview}</p>
         </div>
       );
     } else {
