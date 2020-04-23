@@ -10,7 +10,7 @@ export default class Result extends React.Component {
       console.log(this.props.episode);
       console.log(this.props.show);
       return (
-        <div className="result border rounded bg-light text-dark p-2 my-4">
+        <div className="result border rounded lighter-bg text-dark p-2 my-4">
           <h3>Random Episode:</h3>
           <h4>
             {this.props.show.name}: Season {this.props.episode.season_number},

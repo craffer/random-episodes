@@ -2,6 +2,24 @@ i {
     font-size: 22px;
 }
 
+body {
+    background-color: #1e242b;
+    color: #EEEFF1;
+}
+
+.navbar {
+    background-color: #14181c;
+    color: #BDD4E7;
+}
+
+.navbar-brand {
+    color: #EEEFF1;
+}
+
+.nav-link {
+    color: #9AAABA;
+}
+
 .searchbar {
     height: 2.5rem;
     font-size: 1.2rem;
@@ -21,3 +39,8 @@ i {
     top: 0px;
     right: 5px;
 }
+
+.lighter-bg {
+    background-color: #303c47;
+}
+
