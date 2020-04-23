@@ -19,7 +19,7 @@ export default class SelectedShows extends React.Component {
               />
               <Deselect removeShow={this.props.removeShow} />
             </div>
-            <h5 className="mt-1">{show.name}</h5>
+            <div className="mt-1">{show.name}</div>
           </div>
         );
       });
