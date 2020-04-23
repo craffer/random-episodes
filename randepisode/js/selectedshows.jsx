@@ -18,7 +18,7 @@ export default class SelectedShows extends React.Component {
         selectedShows.push(<Show show={show} onRemove={this.onRemove} />);
       });
       return (
-        <div>
+        <div className="offset-md-2 col-md-8">
           <h5>Selected Shows:</h5>
           <div className="selected-shows d-flex flex-row mt-2 flex-wrap w-100 align-items-around">
             {selectedShows}
