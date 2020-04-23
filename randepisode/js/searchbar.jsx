@@ -57,7 +57,7 @@ export default class SearchBar extends React.Component {
     return (
       <div className="searchArea w-100">
         <input
-          className="rounded searchbar w-100"
+          className="rounded searchbar w-100 p-2"
           type="text"
           placeholder="Enter a TV show"
           ref={(input) => (this.input = input)}
