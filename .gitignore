@@ -15,5 +15,6 @@ venv3/
 node_modules/
 bundle.js
 
-# dirnev
+# secrets
 .envrc
+.env
