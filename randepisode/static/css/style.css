@@ -20,6 +20,10 @@ body {
     color: #9AAABA;
 }
 
+.nav-link:hover, .navbar-brand:hover {
+    color: #89cff0;
+}
+
 .searchbar {
     height: 2.5rem;
     font-size: 1.2rem;
