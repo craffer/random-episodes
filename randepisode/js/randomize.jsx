@@ -36,7 +36,7 @@ export default class Button extends React.Component {
     return (
       <button
         type="submit"
-        className="btn btn-green mt-3"
+        className="btn btn-success mt-3"
         onClick={this.handleClick}
       >
         RANDOMIZE
