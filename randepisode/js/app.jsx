@@ -52,17 +52,17 @@ export default class App extends React.Component {
           </div>
         </div>
         <div className="row">
-          <div className="offset-md-2 col-md-8">
-            <SelectedShows
-              shows={this.state.shows}
-              removeShow={this.removeShow}
-            />
-            <Result
-              visible={this.state.generated}
-              episode={this.state.randomEpisode}
-              show={this.state.randomShow}
-            />
-          </div>
+          <Result
+            visible={this.state.generated}
+            episode={this.state.randomEpisode}
+            show={this.state.randomShow}
+          />
+        </div>
+        <div className="row">
+          <SelectedShows
+            shows={this.state.shows}
+            removeShow={this.removeShow}
+          />
         </div>
       </div>
     );
