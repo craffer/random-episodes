@@ -55,7 +55,7 @@ export default class SearchBar extends React.Component {
 
   render() {
     return (
-      <div className="searchArea w-100">
+      <div className="search-area w-100">
         <input
           className="rounded searchbar w-100 p-2"
           type="text"

@@ -31,10 +31,6 @@ body {
     max-height: 250px;
 }
 
-.ac-result {
-    max-height: 50px;
-}
-
 .deselect {
     top: 0px;
     right: 5px;
@@ -47,4 +43,8 @@ body {
 .btn-green {
     background-color: #19ae2d;
     color: #EEEFF1;
+}
+
+.search-area {
+    max-height: 40px;
 }
