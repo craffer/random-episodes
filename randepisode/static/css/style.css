@@ -48,3 +48,8 @@ body {
 .search-area {
     max-height: 40px;
 }
+
+.poster {
+    width: 150px;
+    height: 225px;
+}

@@ -45,9 +45,9 @@ class Show extends React.Component {
   render() {
     return (
       <div className="show d-flex flex-column align-items-center mx-3">
-        <div className="poster position-relative">
+        <div className="position-relative">
           <img
-            className="rounded shadow-lg"
+            className="rounded shadow poster"
             src={`https://image.tmdb.org/t/p/w185/${this.props.show.poster_path}`}
           />
           <button
