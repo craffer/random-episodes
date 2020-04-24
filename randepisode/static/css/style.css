@@ -23,6 +23,10 @@ body {
     max-height: 250px;
 }
 
+.ac-result {
+    min-height: 60px;
+}
+
 .deselect {
     top: 0px;
     right: 5px;
