@@ -1,7 +1,32 @@
 # Random Episode Generator
 
-This program will take as input different TV shows, and return a random episode from any of those shows.
+The Random Episode Generator is a web app for combatting boredom through your favorite TV shows.
 
-This project uses the TMDb API to get data and images about TV shows.
+## Installation
 
-This product uses the TMDb API but is not endorsed or certified by TMDb.
+Clone this repository and create a python virtual environment, and then run `make init` to install our dependencies.
+
+```bash
+python3 -m venv env
+make init
+```
+
+## Usage
+
+To run the program locally, use the bash script provided and access the site at [localhost:8000](localhost:8000).
+
+```bash
+./bin/flaskrun
+```
+
+## Deployment
+
+This project is deployed to a DigitalOcean droplet, served using uWSGI and Nginx. It can be accessed at [https://conorrafferty.com/episodes](https://conorrafferty.com/episodes).
+
+## License
+
+This project is liscensed under the MIT license – see the [LICENSE](LICENSE) file for more details.
+
+## Acknowledgements
+
+This project uses the [TMDb API](https://www.themoviedb.org/documentation/api) to get data and images about TV shows, but is not endorsed or certified by TMDb.
