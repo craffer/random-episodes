@@ -1,6 +1,6 @@
 # Random Episode Generator
 
-The Random Episode Generator is a web app for combatting boredom through your favorite TV shows.
+The Random Episode Generator is a web app for combating boredom through your favorite TV shows.
 
 ## Installation
 
