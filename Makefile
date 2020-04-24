@@ -4,3 +4,9 @@ init:
 	pre-commit install
 	npm install .
 	npx webpack
+
+build:
+	npx webpack
+
+run:
+	./bin/flaskrun
