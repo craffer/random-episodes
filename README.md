@@ -4,9 +4,11 @@ The Random Episode Generator is a web app for combating boredom through your fav
 
 ## Installation
 
-Clone this repository and create a python virtual environment, and then run `make init` to install our dependencies.
+Clone this repository and create a Python virtual environment, and then run `make init` to install our dependencies.
 
 ```bash
+git clone git@github.com:craffer/random-episodes.git
+cd random-episodes
 python3 -m venv env
 make init
 ```
