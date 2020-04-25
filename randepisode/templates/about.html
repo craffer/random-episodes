@@ -13,12 +13,16 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
 
     <!-- font awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicons/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicons/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicons/favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ url_for('static', filename='images/favicons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ url_for('static', filename='images/favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="{{ url_for('static', filename='images/favicons/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ url_for('static', filename='images/favicons/site.webmanifest') }}">
 
     <title>About &bull; Random Episodes</title>
@@ -38,7 +42,8 @@
                     <a class="nav-link" href="{{ url_for('show_index') }}">Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{ url_for('show_about') }}">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{ url_for('show_about') }}">About <span
+                            class="sr-only">(current)</span></a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -49,8 +54,24 @@
             </ul>
         </div>
     </nav>
-    <div class="d-flex m-3">
-        <h1>About</h1>
+    <div class="container-fluid about">
+        <div class="row my-3 h-100">
+            <div class="offset-md-2 col-md-8 rounded lighter-bg d-flex flex-column h-100">
+                <div>
+                    <h3 class="pt-3">What is this site?</h3>
+                    <p>This site was built for when you want to watch <em>something</em> on TV, but you don't know exactly what. You can enter any TV show that you like, and this tool will present you with an episode from one of them at random. It's perfect for killing time, or for when you're craving watching a show you loved in the past but don't want to commit to a full re-watch.</p>
+                </div>
+                <div>
+                    <h4>How does it work?</h4>
+                    <p>The app uses the <a href="https://www.themoviedb.org/documentation/api" target="_blank">TMDb API</a> to process your search and to get show and episode details and images. If you're interested in learning more, you can check out the code for the site on <a href="https://github.com/craffer/random-episodes" target="_blank">GitHub</a>.
+                </p>
+                </div>
+                <div class="mt-auto">
+                    <h5>Author</h5>
+                    <p>Lorem ipsum.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap JavaScript -->
