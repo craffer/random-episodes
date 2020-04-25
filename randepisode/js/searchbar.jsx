@@ -37,7 +37,7 @@ export default class SearchBar extends React.Component {
   }
 
   search() {
-    if (this.state.query) {
+    if (this.state.query.length > 3) {
       const url = `/episodes/api/v1/search?q=${encodeURI(this.state.query)}`;
       fetch(url, { credentials: "same-origin" })
         .then((response) => {
