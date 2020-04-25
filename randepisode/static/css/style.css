@@ -3,7 +3,10 @@ i {
 }
 
 body {
-    background-color: #1e242b;
+    min-height: 100vh;
+    background: rgb(20, 24, 28);
+    background: linear-gradient(180deg, rgba(30, 36, 43, 1) 0%, rgba(20, 24, 28, 1) 400px, rgba(20, 24, 28, 1) 410px);
+    background-repeat: repeat-x;
     color: #EEEFF1;
 }
 
