@@ -1,6 +1,6 @@
 # Random Episode Generator
 
-The Random Episode Generator is a web app for combating boredom through your favorite TV shows.
+The Random Episode Generator is a web app to help combat boredom with your favorite TV shows.
 
 ## Installation
 
@@ -27,7 +27,7 @@ This project is deployed to a DigitalOcean droplet, served using uWSGI and Nginx
 
 ## License
 
-This project is liscensed under the MIT license – see the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT license – see the [LICENSE](LICENSE) file for more details.
 
 ## Acknowledgements
 
