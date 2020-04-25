@@ -15,7 +15,9 @@ export default class SelectedShows extends React.Component {
     if (this.props.shows.length > 0) {
       let selectedShows = [];
       this.props.shows.forEach((show) => {
-        selectedShows.push(<Show show={show} onRemove={this.onRemove} />);
+        selectedShows.push(
+          <Show key={show.id} show={show} onRemove={this.onRemove} />
+        );
       });
       return (
         <div className="offset-md-2 col-md-8">

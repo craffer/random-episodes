@@ -17,7 +17,11 @@ export default class Autocomplete extends React.Component {
     if (this.props.results) {
       this.props.results.forEach((result) => {
         options.push(
-          <ACResult value={result} onResultClick={this.onResultClick} />
+          <ACResult
+            key={result.id}
+            value={result}
+            onResultClick={this.onResultClick}
+          />
         );
       });
       return (

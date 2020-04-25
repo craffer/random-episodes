@@ -9,7 +9,7 @@ export default class Button extends React.Component {
 
   handleClick() {
     if (this.props.shows !== undefined && this.props.shows.length > 0) {
-      const url = "/episodes/api/v1/generate";
+      const url = "api/v1/generate";
       let shows = [];
       this.props.shows.forEach((show) => {
         shows.push(show.id);
