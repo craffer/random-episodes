@@ -20,7 +20,7 @@ export default class SelectedShows extends React.Component {
         );
       });
       return (
-        <div className="offset-md-2 col-md-8">
+        <div className="offset-md-2 col-md-8 mb-3">
           <h6>SHOWS</h6>
           <div className="selected-shows d-flex flex-row mt-2 flex-wrap w-100 align-items-around">
             {selectedShows}
@@ -61,7 +61,9 @@ class Show extends React.Component {
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div className="mt-1">{this.props.show.name}</div>
+        <div className="show-title-wrapper">
+          <div className="mt-1 show-title">{this.props.show.name}</div>
+        </div>
       </div>
     );
   }

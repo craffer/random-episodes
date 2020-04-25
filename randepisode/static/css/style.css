@@ -57,3 +57,12 @@ body {
 .about {
     height: 86%;
 }
+
+.show-title-wrapper {
+    max-width: 135px;
+    text-align: center;
+}
+
+.show-title {
+    display: inline-block;
+}
